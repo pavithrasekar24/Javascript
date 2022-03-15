@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Profile Details</legend>
+        <form id="personForm" onsubmit="handleSubmit()">
+        <input type="file" id="profile" required onchange="handlefile(event)" accept="image/gif, image/jpeg, image/png">
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        <input type="number" id="age" name="age" placeholder="Enter Age" required>
+        <input type="date" id="dob" name="DOB" placeholder="Choose DOB" required>
+        <textarea id="address" cols="10" name="address" placeholder="Enter address" required></textarea>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    </fieldset>
+</body>
+<script src="Register.js"></script>
+</html>

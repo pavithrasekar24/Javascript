@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./Form.css">
+</head>
+<body>
+    <p>Event Handler -> onchange,oninput, onkeypress, onkeydown, onclick , onsubmit,onmousehover, onmouseleave  </p>
+    <p>attributes -required , minlength, maxlength, min , max,mindate ,maxDate</p>
+    <h1>Form Details</h1>
+    <fieldset>
+        <legend>Profile Details</legend>
+        <form id="personForm" onsubmit="handleSubmit()">
+        <input type="text" id="name" name="name" placeholder="Enter Name" maxlength="10" required oninput="handleFirstName()">
+        <span id="nameError"></span>
+        <input type="number" id="age" name="age" min="18" max="24" placeholder="Enter Age" required oninput="handleAge()" >
+        <span id="ageError"></span>
+        <input type="date" id="dob" name="DOB" placeholder="Choose DOB" >
+        <textarea id="address" cols="10" name="address" placeholder="Enter address" ></textarea>
+        <button onclick="handleAlert()">Alert</button>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    </fieldset>
+</body>
+<script src="Form.js"></script>
+</html>

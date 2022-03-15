@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     Welcome <span id="name"></span> <span id="age"></span>
+
+     <button onclick="handleRemove()">Remove</button>
+     <button onclick="handleClear()">Clear</button>
+
+</body>
+<script>
+    //  let nameValue= localStorage.getItem('local_first')
+    //  let ageValue= localStorage.getItem('local_age')
+    // let name=document.getElementById('name');
+    // name.innerHTML=nameValue;
+    // let age=document.getElementById('age');
+    // age.innerHTML=ageValue
+
+    let personValue=localStorage.getItem('person');
+    let convert_person=JSON.parse(personValue)
+
+    let name=document.getElementById('name');
+    name.innerHTML=convert_person.firstName;
+    let age=document.getElementById('age');
+    age.innerHTML=convert_person.age;
+  
+    function handleRemove(){
+      localStorage.removeItem('local_first');
+     }
+
+  function handleClear(){
+      localStorage.clear();
+  }
+
+</script>
+</html>

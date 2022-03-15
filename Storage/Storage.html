@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Storage - </h1>
+    <li>LocalStorage, Session Storage</li>
+    <li> localStorage.methodName /sesionStorage.methodName  setItem(key,value) , getItem(key) , removeItem(key), clearItem()</li>
+    <li> Diff b/w localStorage -> access through browser , sessionstorage -> per tab</li>
+    <li>localStorage 10Mb-value -manually delete</li>
+    <li>sessionStorage 5KB- close the tab the value will delete automatically</li>
+    <form>
+    <input type="text" placeholder= "Enter firstName" name="firstName" id="firstName" />
+    <input type="text" placeholder= "Enter lastName" name="lastName" id="lastName" />
+    <input type="text" placeholder= "Enter age" name="age" id="age" />
+
+    <button onclick="handleSubmit()">Submit</button>
+</form>
+
+</body>
+<script src="./Storage.js"></script>
+</html>

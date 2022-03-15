@@ -1,0 +1,25 @@
+{
+    "person": {
+        "name": "john",
+        "age": 45,
+        "place": "chennai"
+    },
+    "customerDetails": [
+        {
+            "name": "Ram Kumar",
+            "age": 25
+           
+        },
+        {
+            "name": "Rajesh",
+            "age": 28
+           
+        },
+        {
+            "name": "Kaviya",
+            "age": 24
+           
+        }
+    ]
+
+}

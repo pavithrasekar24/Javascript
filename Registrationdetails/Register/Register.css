@@ -1,0 +1,16 @@
+input[type="text"],input[type="number"],input[type="date"],textarea {
+    display: block;
+    width:250px;
+    border-radius: 5px;
+    border:1px solid #0000ff;
+    margin:10px auto;
+    padding:5px 20px;
+    outline: none;
+}
+input[type="file"]{
+    margin: 10px;
+}
+fieldset{
+    text-align: center;
+    margin:10% 30%;
+}

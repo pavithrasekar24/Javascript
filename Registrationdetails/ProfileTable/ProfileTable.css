@@ -1,0 +1,24 @@
+table{
+    margin:5% 20%;
+}
+table tr td,tr th{
+    border:1px solid;
+    padding:5px 20px;
+}
+.my-profile{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit: cover;
+}
+.back-btn{
+    float:right;
+    padding:10px 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:blue ;
+    color:white;
+    border:none;
+    font-weight: 600;
+    
+}
